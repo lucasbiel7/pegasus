@@ -1,9 +1,9 @@
 # Colaboradores
-[Breno Brandão Gonçalves](https://github.com/noname)
-[Diego Soares Santos](https://github.com/protoman555)
-[Lucas Gabriel de Souza Dutra](https://github.com/lucasbiel7)
-[Paulo Henrique dos Santos](https://github.com/phenrique17)
-[Rafael Moreira Almeida](https://github.com/MRsarael)
+[Breno Brandão Gonçalves](https://github.com/noname)\
+[Diego Soares Santos](https://github.com/protoman555)\
+[Lucas Gabriel de Souza Dutra](https://github.com/lucasbiel7)\
+[Paulo Henrique dos Santos](https://github.com/phenrique17)\
+[Rafael Moreira Almeida](https://github.com/MRsarael)\
 [Vinicius Menezes Lopes](https://github.com/ViniciusMenezesLopes)
 
 ## Como contribuir
