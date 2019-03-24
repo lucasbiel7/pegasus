@@ -7,3 +7,8 @@ Desta forma as avaliações serão mais concisas e assertivas, já que as avalia
 forma colaborativa por diversos engenheiros e terão como auxilio a tecnologia da informação para 
 captar sinais que talvez tenha sido imperceptível a olho nu, como é feito em uma vistoria pessoal. 
 Podendo assim diminuir as ocorrências de desastres industriais, humanitários e ambientais
+
+
+## Contribuição
+
+Por favor leia o arquivo de [contribuição](https://github.com/lucasbiel7/pegaso/blob/master/CONTRIBUTING.md) para saber como você pode nos ajudar.
