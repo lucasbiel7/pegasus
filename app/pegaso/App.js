@@ -1,11 +1,15 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View, ActivityIndicator, Image } from "react-native";
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <Image
+          source={require("./assets/image/logo.jpeg")}
+          style={styles.logo}
+        />
+        <ActivityIndicator size="large" color="#00008B" />
       </View>
     );
   }
@@ -14,8 +18,14 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#D2691E",
+    alignItems: "center",
+    justifyContent: "center"
   },
+  logo: {
+    width: "50%",
+    height: "75%",
+
+    "object-fit": "cover"
+  }
 });
