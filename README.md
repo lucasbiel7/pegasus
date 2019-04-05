@@ -1,5 +1,7 @@
-# Pégaso
 
+<img src="https://github.com/lucasbiel7/pegaso/blob/master/app/pegaso/assets/image/logo.png" width="300"/>
+
+##
 Este trabalho tem como objetivo de criar uma solução onde será possível analisar imagens obtidas das
 barragens e processa-las para conseguir identificar anomalias. Quando encontradas serão enviadas para
 engenheiros responsáveis através de um aplicativo onde poderão realizar a avaliação de barragem. 
