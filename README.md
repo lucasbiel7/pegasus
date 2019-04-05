@@ -17,7 +17,7 @@ Para obtermos imagens de barragens usaremos drones como ferramenta para esse pro
 ![alt text](https://github.com/lucasbiel7/pegaso/blob/master/Drone.gif)
 
 ## BARRAGENS
-Selecionaremos barrans capazes de apresentarem algum risco eminente quanto a ruptura e capturaremos várias imagens da mesma em pontos estratégicos para que possamos encontrar, ou não, alguma anomalia para repassarmos para inspeção.
+Selecionaremos barragens capazes que apresentarem algum risco eminente quanto a ruptura e capturaremos várias imagens da mesma em pontos estratégicos para que possamos encontrar, ou não, alguma anomalia para repassarmos para inspeção.
 
 <img src="https://github.com/lucasbiel7/pegaso/blob/master/Barragem.jpg" width="300"/>
 
