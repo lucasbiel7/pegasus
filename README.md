@@ -8,7 +8,23 @@ engenheiros responsáveis através de um aplicativo onde poderão realizar a ava
 Desta forma as avaliações serão mais concisas e assertivas, já que as avaliações serão realizadas de
 forma colaborativa por diversos engenheiros e terão como auxilio a tecnologia da informação para 
 captar sinais que talvez tenha sido imperceptível a olho nu, como é feito em uma vistoria pessoal. 
-Podendo assim diminuir as ocorrências de desastres industriais, humanitários e ambientais
+Podendo assim diminuir as ocorrências de desastres industriais, humanitários e ambientais.
+
+
+## DRONE
+Para obtermos imagens de barragens usaremos drones como ferramenta para esse processo que realiza esse tipo de trabalho mais rapido e prático e com isso torna-se o processo muito mais rápido e aumentamos nosso alcance de imagem, algo muito dificil a olho humano.
+
+![alt text](https://github.com/lucasbiel7/pegaso/blob/master/Drone.gif)
+
+## BARRAGENS
+Selecionaremos barrans capazes de apresentarem algum risco eminente quanto a ruptura e capturaremos várias imagens da mesma em pontos estratégicos para que possamos encontrar, ou não, alguma anomalia para repassarmos para inspeção.
+
+<img src="https://github.com/lucasbiel7/pegaso/blob/master/Barragem.jpg" width="300"/>
+
+## ENGENHEIRO
+Teremos vários engenheiro capacitados para terem acesso a aplicação, onde já estará disponível as imagens que apresentaram anomalias, para possoam detecar se necessitam inspeção presencial para tomarem decisão mais precisas desses pontos específicos.
+
+<img src="https://github.com/lucasbiel7/pegaso/blob/master/Engenheiro.jpg" width="300"/>
 
 
 ## Contribuição
