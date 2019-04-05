@@ -1,12 +1,13 @@
 import React from "react";
-import { StyleSheet, View, ActivityIndicator, Image } from "react-native";
+import { View, ActivityIndicator, Image } from "react-native";
+import styles from "./assets/styles/style";
 
-export default class App extends React.Component {
+export default class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Image
-          source={require("./assets/image/logo.jpeg")}
+          source={require("./assets/image/logo.png")}
           style={styles.logo}
         />
         <ActivityIndicator size="large" color="#00008B" />
@@ -14,18 +15,8 @@ export default class App extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#D2691E",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  logo: {
-    width: "50%",
-    height: "75%",
-
-    "object-fit": "cover"
-  }
+const MainNavigator = createStackNavigator({
+  Home: { screen: Home }
 });
+
+const App = createAppContainer(MainNavigator);
