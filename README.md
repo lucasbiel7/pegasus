@@ -12,3 +12,24 @@ Podendo assim diminuir as ocorrências de desastres industriais, humanitários e
 ## Contribuição
 
 Por favor leia o arquivo de [contribuição](https://github.com/lucasbiel7/pegaso/blob/master/CONTRIBUTING.md) para saber como você pode nos ajudar.
+
+## Como iniciar contribuição
+Você deve primeiramente clonar o projeto para sua máquina local e entrar na pasta:
+```
+git clone git@github.com:lucasbiel7/pegaso.git
+cd pegaso\app\pegaso
+```
+Para baixar a dependencia para executar o projeto deve se usar:
+```
+npm install -g expo-cli
+```
+Para iniciar o aplicativo é necessário digitar o seguinte comando:
+```
+npm run start
+```
+ou 
+```
+npm start
+```
+Após este passo basta ler o QRCode no seu celular que será carregado o projeto em modo de desenvolvimento.
+Pronto você já está preparado para contribuir!
