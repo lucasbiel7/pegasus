@@ -3,7 +3,7 @@ import Contantes from "./constantes.style";
 export default StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: Contantes.corPrimaria,
+        backgroundColor: Contantes.cores.corPrimaria,
         alignItems: "center",
         justifyContent: "center"
     },
@@ -16,5 +16,8 @@ export default StyleSheet.create({
     },
     whiteText: {
         color: "white"
+    },
+    input: {
+        borderWidth: 1
     }
 });

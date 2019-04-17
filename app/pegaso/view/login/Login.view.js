@@ -11,9 +11,9 @@ export default class Login extends React.Component {
     render() {
         return (
             <View style={globalStyle.container}>
-                <Text style={globalStyle.whiteText}>Usuário</Text>
+                <Text style={[globalStyle.whiteText]}>Usuário</Text>
                 <TextInput />
-                <Text style={globalStyle.whiteText}>Senha</Text>
+                <Text style={[globalStyle.whiteText]}>Senha</Text>
                 <TextInput />
             </View>
         );

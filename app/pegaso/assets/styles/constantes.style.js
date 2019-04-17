@@ -1,3 +1,5 @@
 export default {
-    corPrimaria: '#D2691E',
+    cores: {
+        corPrimaria: '#D2691E',
+    }
 };
