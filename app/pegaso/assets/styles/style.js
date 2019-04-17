@@ -13,5 +13,8 @@ export default StyleSheet.create({
     resizeMode: "contain",
     width: "75%",
     marginLeft: "13.5%"
+  },
+  whiteText: {
+    color: "white"
   }
 });
