@@ -3,7 +3,7 @@
   "expoServerPort": 19000,
   "packagerPort": 19001,
   "packagerPid": 12836,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://7b-h9u.anonymous.pegaso.exp.direct",
+  "packagerNgrokUrl": "https://packager.7b-h9u.anonymous.pegaso.exp.direct",
+  "ngrokPid": 11220
 }
