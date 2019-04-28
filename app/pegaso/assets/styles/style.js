@@ -3,9 +3,11 @@ import Contantes from "./constantes.style";
 export default StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: Contantes.cores.corPrimaria,
+        backgroundColor: Contantes.cores.darkBlue,
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        paddingLeft: 10,
+        paddingRight: 10
     },
     logo: {
         flex: 1,
@@ -19,5 +21,8 @@ export default StyleSheet.create({
     },
     input: {
         borderWidth: 1
+    },
+    button: {
+        backgroundColor: Contantes.cores.laranja,
     }
 });

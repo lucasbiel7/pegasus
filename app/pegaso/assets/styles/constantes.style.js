@@ -1,5 +1,6 @@
 export default {
     cores: {
-        corPrimaria: '#D2691E',
+        laranja: '#D2691E',
+        darkBlue: '#00008B'
     }
 };
