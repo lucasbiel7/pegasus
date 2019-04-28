@@ -29,9 +29,9 @@ Teremos vários engenheiro capacitados para terem acesso a aplicação, onde já
 ## Aplicativo
 Estamos utilizando um framework de componente.
 
-```
+
 [React native elements](https://github.com/react-native-training/react-native-elements)
-```
+
 
 ## Contribuição
 
