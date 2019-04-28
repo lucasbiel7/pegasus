@@ -1,1 +1,3 @@
 *.class
+*/.expo/*
+app/pegaso/.expo/
