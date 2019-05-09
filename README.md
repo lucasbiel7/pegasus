@@ -2,7 +2,7 @@
 <img src="https://github.com/lucasbiel7/pegaso/blob/master/app/pegaso/assets/image/logo.png" width="300"/>
 
 ##
-Este trabalho tem como objetivo de criar uma solução onde será possível analisar imagens obtidas das
+Este trabalho tem como objetivo criar uma solução onde será possível analisar imagens obtidas das
 barragens e processa-las para conseguir identificar anomalias. Quando encontradas serão enviadas para
 engenheiros responsáveis através de um aplicativo onde poderão realizar a avaliação de barragem. 
 Desta forma as avaliações serão mais concisas e assertivas, já que as avaliações serão realizadas de
@@ -12,7 +12,7 @@ Podendo assim diminuir as ocorrências de desastres industriais, humanitários e
 
 
 ## DRONE
-Para obtermos imagens de barragens usaremos drones como ferramenta para esse processo que realiza esse tipo de trabalho mais rapido e prático e com isso torna-se o processo muito mais rápido e aumentamos nosso alcance de imagem, algo muito dificil a olho humano.
+Para obtermos imagens de barragens usaremos drones como ferramenta para esse processo que realiza esse tipo de trabalho mais rápido e prático e com isso torna-se o processo muito mais rápido e aumentamos nosso alcance de imagem, algo muito difícil a olho humano.
 
 ![alt text](https://github.com/lucasbiel7/pegaso/blob/master/Drone.gif)
 
@@ -22,7 +22,7 @@ Selecionaremos barragens capazes que apresentarem algum risco eminente quanto a 
 <img src="https://github.com/lucasbiel7/pegaso/blob/master/Barragem.jpg" width="300"/>
 
 ## ENGENHEIRO
-Teremos vários engenheiro capacitados para terem acesso a aplicação, onde já estará disponível as imagens que apresentaram anomalias, para possoam detecar se necessitam inspeção presencial para tomarem decisão mais precisas desses pontos específicos.
+Teremos vários engenheiros capacitados para terem acesso a aplicação, onde já estará disponível as imagens que apresentaram anomalias, para possam detectar se necessitam inspeção presencial para tomarem decisão mais precisas desses pontos específicos.
 
 <img src="https://github.com/lucasbiel7/pegaso/blob/master/Engenheiro.jpg" width="300"/>
 
