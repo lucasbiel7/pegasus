@@ -3,18 +3,18 @@ import Contantes from "./constantes.style";
 export default StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: Contantes.cores.darkBlue,
+        backgroundColor: 'white',
         alignItems: "center",
         justifyContent: "center",
         paddingLeft: 10,
         paddingRight: 10
     },
     logo: {
-        flex: 1,
         alignSelf: "stretch",
         resizeMode: "contain",
-        width: "75%",
-        marginLeft: "13.5%"
+        width: "50%",
+        marginLeft: "25%",
+        position: 'absolute',
     },
     whiteText: {
         color: "white"
