@@ -11,14 +11,14 @@ export default StyleSheet.create({
     },
     logo: {
         resizeMode: "contain",
-        maxWidth: '50%',
+        maxWidth: '75%',
         maxHeight: '50%',
-        marginLeft: '25%',
+        marginLeft: '12.5%',
     },
     whiteText: {
         color: "white"
     },
-    input: {
+    padding5: {
         paddingTop: 5,
     },
     button: {
