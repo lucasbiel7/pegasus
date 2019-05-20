@@ -4,6 +4,7 @@ import globalStyle from "../../assets/styles/style";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input, Button } from 'react-native-elements';
 import { NavigationActions, StackActions } from "react-navigation";
+import database from "../../database/firebase";
 
 export default class Login extends React.Component {
 
@@ -12,11 +13,15 @@ export default class Login extends React.Component {
     }
 
     login() {
-        const navigateAction = StackActions.reset({
-            index: 0,
-            actions: [NavigationActions.navigate({ routeName: 'Dashboard' })]
+        // const navigateAction = StackActions.reset({
+        //     index: 0,
+        //     actions: [NavigationActions.navigate({ routeName: 'Dashboard' })]
+        // });
+        // this.props.navigation.dispatch(navigateAction);
+        database.collection('users').add({
+            name: 'teste',
+            password: 'teste'
         });
-        this.props.navigation.dispatch(navigateAction);
     }
 
     render() {
