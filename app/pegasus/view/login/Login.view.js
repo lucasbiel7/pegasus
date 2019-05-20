@@ -8,6 +8,10 @@ import database from "../../database/firebase";
 
 export default class Login extends React.Component {
 
+    state = {
+        itens: []
+    }
+
     constructor() {
         super();
     }
@@ -18,9 +22,12 @@ export default class Login extends React.Component {
         //     actions: [NavigationActions.navigate({ routeName: 'Dashboard' })]
         // });
         // this.props.navigation.dispatch(navigateAction);
-        database.collection('users').add({
-            name: 'teste',
-            password: 'teste'
+        database.ref('users').push({ name: 'teste' });
+        database.ref('users').on('value', (snapshot) => {
+            let data = snapshot.val();
+            let itens = Object.values(data);
+            this.setState({ itens });
+            console.log(itens);
         });
     }
 
