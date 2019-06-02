@@ -1,5 +1,5 @@
 
-<img src="https://github.com/lucasbiel7/pegaso/blob/master/app/pegaso/assets/image/logo.png" width="300"/>
+<img src="https://github.com/lucasbiel7/pegaso/blob/master/app/pegasus/assets/image/logo.png" width="300"/>
 
 ##
 Este trabalho tem como objetivo criar uma solução onde será possível analisar imagens obtidas das
