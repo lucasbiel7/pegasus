@@ -22,6 +22,11 @@ export default class Login extends React.Component {
         super();
     }
 
+    /**
+     * Logica criada para buscar o usuário no firebird
+     * e realizar as validações necessárias da tela
+     * 
+     */
     login() {
         if (this.state) {
             this.state.form = {};
@@ -54,6 +59,9 @@ export default class Login extends React.Component {
         this.setState({ form: { senhaError: 'Usuário ou senha incorretos' } });
     }
 
+    /**
+     * Navegando e resetando o stack bar navigation
+     */
     redirectDashboard() {
         const navigateAction = StackActions.reset({
             index: 0,

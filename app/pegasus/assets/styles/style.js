@@ -15,6 +15,12 @@ export default StyleSheet.create({
         maxHeight: '50%',
         marginLeft: '12.5%',
     },
+    logoTexto: {
+        resizeMode: "contain",
+        maxWidth: '75%',
+        maxHeight: '100%',
+        marginLeft: '12.5%',
+    },
     whiteText: {
         color: "white"
     },
