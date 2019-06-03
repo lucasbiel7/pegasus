@@ -1,6 +1,11 @@
 import React from "react";
 import { View } from "react-native";
-import { Button } from "react-native-elements";
+import {
+    ThemeProvider,
+    Card
+} from "react-native-elements";
+import pegasusTheme from "../../assets/styles/pegasus.theme";
+
 export default class Dashboard extends React.Component {
 
     constructor() {
@@ -8,9 +13,13 @@ export default class Dashboard extends React.Component {
     }
 
     render() {
-        const { navigate } = this.props.navigation;
-        return <View style={{ flex: 2, alignItems: 'center' }}>
-            <Button />
+        return <View>
+            <ThemeProvider theme={pegasusTheme}>
+                <Card>
+
+                </Card>
+            </ThemeProvider>
         </View>;
     }
 }
+
