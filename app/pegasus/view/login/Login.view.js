@@ -2,10 +2,16 @@ import React from "react";
 import { View, Image } from "react-native";
 import globalStyle from "../../assets/styles/style";
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Input, Button } from 'react-native-elements';
+import {
+    Input,
+    Button,
+    ThemeProvider
+} from 'react-native-elements';
 import { NavigationActions, StackActions } from "react-navigation";
 import database from "../../database/firebase";
-import Usuario from "../../resource/usuario.class";
+import Usuario from "../../resource/Usuario.class";
+import pegasusTheme from "../../assets/styles/pegasus.theme";
+import constantesStyle from "../../assets/styles/constantes.style";
 
 export default class Login extends React.Component {
 
@@ -59,19 +65,26 @@ export default class Login extends React.Component {
     render() {
         return (
             <View style={globalStyle.container}>
-                <Image style={globalStyle.logo} source={require('./../../assets/image/logo.png')} />
-                <Input placeholder=" Usuário"
-                    onChangeText={(login) => this.usuario.login = login}
-                    errorMessage={this.state && this.state.form ? this.state.form.usuarioErro : ""}
-                    style={globalStyle.padding5} leftIcon={
-                        <Icon name="user" size={22} color="black" />
-                    } />
-                <Input placeholder=" Senha" type secureTextEntry={true} onChangeText={(senha) => this.usuario.senha = senha} style={globalStyle.padding5}
-                    errorMessage={this.state && this.state.form ? this.state.form.senhaError : ""}
-                    leftIcon={
-                        <Icon name="key" size={22} color="black" />
-                    } />
-                <Button title="Entrar" style={globalStyle.padding5} onPress={() => { this.login() }} />
+                <ThemeProvider theme={pegasusTheme}>
+                    <Image style={globalStyle.logo} source={require('./../../assets/image/logo.png')} />
+                    <Input placeholder=" Usuário"
+                        onChangeText={(login) => this.usuario.login = login}
+                        errorMessage={this.state && this.state.form ? this.state.form.usuarioErro : ""}
+                        style={globalStyle.padding5} leftIcon={
+                            <Icon name="user" size={22} color="black" />
+                        } />
+                    <Input placeholder=" Senha"
+                        secureTextEntry={true}
+                        onChangeText={(senha) => this.usuario.senha = senha}
+                        style={globalStyle.padding5}
+                        errorMessage={this.state && this.state.form ? this.state.form.senhaError : ""}
+                        leftIcon={
+                            <Icon name="key" size={22} color="black" />
+                        } />
+                    <Button title="Entrar"
+                        style={[{ maxWidth: 80, minWidth: 80, marginLeft: '40%' }, globalStyle.padding5]}
+                        onPress={() => { this.login() }} />
+                </ThemeProvider>
             </View>
         );
     }
