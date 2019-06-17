@@ -1,5 +1,9 @@
 import React from "react";
-import { View, Image } from "react-native";
+import {
+    View,
+    Image,
+    AsyncStorage
+} from "react-native";
 import globalStyle from "../../assets/styles/style";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {
@@ -16,6 +20,7 @@ export default class Login extends React.Component {
 
     usuario = new Usuario();
     senhaError = null;
+
 
     constructor() {
         super();
@@ -38,6 +43,7 @@ export default class Login extends React.Component {
                         let itens = Object.values(data);
                         let usuario = itens.filter(usuario => usuario.password == this.usuario.senha)[0];
                         if (usuario) {
+                            AsyncStorage.setItem('userToken', usuario.user);
                             this.redirectDashboard();
                         } else {
                             this.falhaLogin();
@@ -62,11 +68,12 @@ export default class Login extends React.Component {
      * Navegando e resetando o stack bar navigation
      */
     redirectDashboard() {
-        const navigateAction = StackActions.reset({
-            index: 0,
-            actions: [NavigationActions.navigate({ routeName: 'Dashboard' })]
-        });
-        this.props.navigation.dispatch(navigateAction);
+        // const navigateAction = StackActions.reset({
+        //     index: 0,
+        //     actions: [NavigationActions.navigate({ routeName: 'App' })]
+        // });
+        // this.props.navigation.dispatch(navigateAction);
+        this.props.navigation.navigate('Loader');
     }
 
     render() {

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { createStackNavigator, createBottomTabNavigator } from "react-navigation";
+import { createStackNavigator, createBottomTabNavigator, createSwitchNavigator } from "react-navigation";
 
 import { Icon } from "react-native-elements";
 import constantesStyle from "./assets/styles/constantes.style";
@@ -10,19 +10,18 @@ import constantesStyle from "./assets/styles/constantes.style";
 import Dashboard from "./view/dashboard/Dashboard.view";
 import Login from "./view/login/Login.view";
 import Message from "./view/message/Message.view";
-
-
+import Loader from "./view/loader/Loader.view";
+import { AsyncStorage } from "react-native";
 /**
  * Navegação da tela principal
  */
 export const bottomNavigate = createBottomTabNavigator({
     Home: { screen: Dashboard },
     Message: { screen: Message },
-    Sair: { screen: Login }
+    Sair: { screen: Loader }
 },
     {
         defaultNavigationOptions: ({ navigation }) => ({
-
             tabBarIcon: ({ focused, horizontal, tintColor }) => {
                 const { routeName } = navigation.state;
                 let iconName;
@@ -40,6 +39,13 @@ export const bottomNavigate = createBottomTabNavigator({
                 return <Icon
                     name={iconName}
                     color={focused ? constantesStyle.cores.laranja : 'white'}></Icon>
+            },
+            tabBarOnPress: (options) => {
+                if (options.navigation.state.routeName == 'Sair') {
+                    AsyncStorage.removeItem('userToken');
+                }
+                options.navigation.navigate(options.navigation.state.routeName);
+
             }
         }),
         tabBarOptions: {
@@ -53,9 +59,12 @@ export const bottomNavigate = createBottomTabNavigator({
 /**
  * Navegação da tela de login, stack principal
  */
-const Routing = createStackNavigator({
-    Login: { screen: Login },
-    Dashboard: { screen: bottomNavigate }
+const routing = createStackNavigator({
+    Login: { screen: Login }
 });
 
-export default Routing;
+export default createSwitchNavigator({
+    Loader: Loader,
+    Auth: routing,
+    App: bottomNavigate
+});

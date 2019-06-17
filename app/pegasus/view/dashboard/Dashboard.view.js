@@ -27,6 +27,7 @@ export default class Dashboard extends React.Component {
             flexDirection: 'column',
             justifyContent: 'flex-start',
             alignItems: 'stretch',
+            marginTop: 25
         }]}>
             <ThemeProvider theme={pegasusTheme}>
                 <View style={{ width: '100%', maxHeight: '15%' }}>
@@ -38,7 +39,7 @@ export default class Dashboard extends React.Component {
                     <Button
                         title="Avaliações"
                         style={[DashboardStyle.button.style]}
-                        buttonStyle={[DashboardStyle.button.buttonStyle]}
+                        buttonStyle={[DashboardStyle.button.buttonStyle, {}]}
                         titleStyle={[DashboardStyle.button.titleStyle]}
                         icon={
                             <Icon
@@ -67,10 +68,10 @@ export default class Dashboard extends React.Component {
 
                 <View>
                     <Button
-                        title="Classificacao das Barragens"
+                        title="Classificação das Barragens"
                         style={[DashboardStyle.button.style]}
                         buttonStyle={[DashboardStyle.button.buttonStyle]}
-                        titleStyle={[DashboardStyle.button.titleStyle]}
+                        titleStyle={[DashboardStyle.button.titleStyle, { flexWrap: 'wrap', width: 150 }]}
                         icon={
                             <Icon
                                 name="list-alt"
