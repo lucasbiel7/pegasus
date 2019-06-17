@@ -3,7 +3,6 @@ import { View } from "react-native";
 import {
     ThemeProvider,
     Image,
-    Text,
     Icon,
     Button
 } from "react-native-elements";

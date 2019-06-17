@@ -17,7 +17,8 @@ import Message from "./view/message/Message.view";
  */
 export const bottomNavigate = createBottomTabNavigator({
     Home: { screen: Dashboard },
-    Message: { screen: Message }
+    Message: { screen: Message },
+    Sair: { screen: Login }
 },
     {
         defaultNavigationOptions: ({ navigation }) => ({
@@ -31,6 +32,9 @@ export const bottomNavigate = createBottomTabNavigator({
                         break;
                     case "Message":
                         iconName = "message";
+                        break;
+                    case "Sair":
+                        iconName = "exit-to-app";
                         break;
                 }
                 return <Icon

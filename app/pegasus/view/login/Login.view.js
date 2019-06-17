@@ -11,7 +11,6 @@ import { NavigationActions, StackActions } from "react-navigation";
 import database from "../../database/firebase";
 import Usuario from "../../resource/Usuario.class";
 import pegasusTheme from "../../assets/styles/pegasus.theme";
-import constantesStyle from "../../assets/styles/constantes.style";
 
 export default class Login extends React.Component {
 
